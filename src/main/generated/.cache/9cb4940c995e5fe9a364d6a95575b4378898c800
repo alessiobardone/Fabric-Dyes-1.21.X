@@ -1,4 +1,15 @@
-// 1.21	2025-07-26T16:51:44.0452963	Dyes/Model Definitions
+// 1.21	2025-07-26T20:56:10.0193482	Dyes/Model Definitions
+b53ad360f54408d6407dc5565cbf64efa296e7cd assets\dyes\models\item\rose_dye.json
+3e6d869527d22af9f564504b3823ff6157d21692 assets\dyes\models\item\sangria_dye.json
+43be2f3a6843c05a095639a5c920e2d43c52a45b assets\dyes\models\item\blurple_dye.json
+b44d21e574d5bb859d5ac6a793a0a29c39de436b assets\dyes\blockstates\blurple_glazed_terracotta.json
 07320f1816a9d098a61339be3195d0b4fd5ef389 assets\dyes\models\block\sacramento_glazed_terracotta.json
+07ef309fc9aa515ee694a85e8e1cd09ed89bdfc3 assets\dyes\models\block\blurple_glazed_terracotta.json
+9fbae6341bac9bc3849cac2600ede350d5ec2937 assets\dyes\models\item\sky_dye.json
+f0932ad9859c5258e875b11bc30de2099d037ced assets\dyes\models\item\coral_dye.json
+17accaa8ac938696c31381f0f397115aece9c72c assets\dyes\models\item\wasabi_dye.json
+2a6b2d3a284e5532bdd4173dafee078d0d6386b8 assets\dyes\models\item\canary_dye.json
+771b77963f709dbc07e25f0857393ca66ddf8714 assets\dyes\models\item\sacramento_dye.json
 25a2d23e5494c528f9a4fe8f0b71481cee59822a assets\dyes\models\item\sacramento_glazed_terracotta.json
+432d071ade455232fc1c3cdb1e1b9ab6fccde43d assets\dyes\models\item\blurple_glazed_terracotta.json
 4e7db99259208fc07427ab3d59a72bac07f71a8f assets\dyes\blockstates\sacramento_glazed_terracotta.json

@@ -1,3 +1,13 @@
 {
+  "item.dyes.blurple_dye": "Blurple Dye",
+  "item.dyes.canary_dye": "Canary Dye",
+  "item.dyes.coral_dye": "Coral Dye",
+  "item.dyes.rose_dye": "Rose Dye",
+  "item.dyes.sacramento_dye": "Sacramento Dye",
+  "item.dyes.sangria_dye": "Sangria Dye",
+  "item.dyes.sky_dye": "Sky Dye",
+  "item.dyes.wasabi_dye": "Wasabi Dye",
+
+  "block.dyes.blurple_glazed_terracotta": "Blurple Glazed Terracotta",
   "block.dyes.sacramento_glazed_terracotta": "Sacramento Glazed Terracotta"
 }

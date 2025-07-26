@@ -1,6 +1,7 @@
 package net.brdviii.dyes;
 
 import net.brdviii.dyes.block.ModBlocks;
+import net.brdviii.dyes.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,5 +15,6 @@ public class Dyes implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 	}
 }

@@ -4,21 +4,32 @@ import net.brdviii.dyes.Dyes;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ConcretePowderBlock;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block SACRAMENTO_GLAZED_TERRACOTTA = registerBlock("sacramento_glazed_terracotta",
+    public static final Block BLURPLE_GLAZED_TERRACOTTA = registerBlock("blurple_glazed_terracotta",
             new Block(AbstractBlock.Settings.create()
-                    .strength(4f)
+                    .strength(1.4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SACRAMENTO_GLAZED_TERRACOTTA = registerBlock("sacramento_glazed_terracotta",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(1.4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
+
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
@@ -34,6 +45,7 @@ public class ModBlocks {
         Dyes.LOGGER.info("Registring Mod Block");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
+            entries.add(ModBlocks.BLURPLE_GLAZED_TERRACOTTA);
             entries.add(ModBlocks.SACRAMENTO_GLAZED_TERRACOTTA);
         });
     }
