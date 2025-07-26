@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "dyes",
+	"version": "${version}",
+	"name": "Dyes",
+	"description": "More Dyes",
+	"authors": [
+		"brdviii"
+	],
+	"contact": {
+		"homepage": "https://brdviii.net",
+		"sources": "https://github.com/alessiobardone/Fabric-Dyes-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/dyes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.brdviii.dyes.Dyes"
+		],
+		"fabric-datagen": [
+			"net.brdviii.dyes.DyesDataGenerator"
+		],
+		"client": [
+			"net.brdviii.dyes.DyesClient"
+		]
+
+	},
+	"mixins": [
+		"dyes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
