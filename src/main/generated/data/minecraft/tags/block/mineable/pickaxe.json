@@ -1,6 +1,20 @@
 {
   "values": [
     "dyes:blurple_glazed_terracotta",
-    "dyes:sacramento_glazed_terracotta"
+    "dyes:canary_glazed_terracotta",
+    "dyes:coral_glazed_terracotta",
+    "dyes:rose_glazed_terracotta",
+    "dyes:sacramento_glazed_terracotta",
+    "dyes:sangria_glazed_terracotta",
+    "dyes:sky_glazed_terracotta",
+    "dyes:wasabi_glazed_terracotta",
+    "dyes:blurple_concrete",
+    "dyes:canary_concrete",
+    "dyes:coral_concrete",
+    "dyes:rose_concrete",
+    "dyes:sacramento_concrete",
+    "dyes:sangria_concrete",
+    "dyes:sky_concrete",
+    "dyes:wasabi_concrete"
   ]
 }

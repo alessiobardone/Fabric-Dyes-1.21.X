@@ -9,5 +9,20 @@
   "item.dyes.wasabi_dye": "Wasabi Dye",
 
   "block.dyes.blurple_glazed_terracotta": "Blurple Glazed Terracotta",
-  "block.dyes.sacramento_glazed_terracotta": "Sacramento Glazed Terracotta"
+  "block.dyes.canary_glazed_terracotta": "Canary Glazed Terracotta",
+  "block.dyes.coral_glazed_terracotta": "Coral Glazed Terracotta",
+  "block.dyes.rose_glazed_terracotta": "Rose Glazed Terracotta",
+  "block.dyes.sacramento_glazed_terracotta": "Sacramento Glazed Terracotta",
+  "block.dyes.sangria_glazed_terracotta": "Sangria Glazed Terracotta",
+  "block.dyes.sky_glazed_terracotta": "Sky Glazed Terracotta",
+  "block.dyes.wasabi_glazed_terracotta": "Wasabi Glazed Terracotta",
+
+  "block.dyes.blurple_concrete": "Blurple Concrete",
+  "block.dyes.canary_concrete": "Canary Concrete",
+  "block.dyes.coral_concrete": "Coral Concrete",
+  "block.dyes.rose_concrete": "Rose Concrete",
+  "block.dyes.sacramento_concrete": "Sacramento Concrete",
+  "block.dyes.sangria_concrete": "Sangria Concrete",
+  "block.dyes.sky_concrete": "Sky Concrete",
+  "block.dyes.wasabi_concrete": "Wasabi Concrete"
 }
