@@ -33,6 +33,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SANGRIA_CONCRETE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKY_CONCRETE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WASABI_CONCRETE);
+
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.BLURPLE_CONCRETE_POWDER);
     }
 
     @Override

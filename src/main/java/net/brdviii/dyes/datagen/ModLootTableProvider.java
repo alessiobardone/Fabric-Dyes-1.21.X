@@ -31,5 +31,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SANGRIA_CONCRETE);
         addDrop(ModBlocks.SKY_CONCRETE);
         addDrop(ModBlocks.WASABI_CONCRETE);
+
+        addDrop(ModBlocks.BLURPLE_CONCRETE_POWDER);
     }
 }

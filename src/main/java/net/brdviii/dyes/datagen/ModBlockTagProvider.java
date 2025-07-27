@@ -32,6 +32,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SACRAMENTO_CONCRETE)
                 .add(ModBlocks.SANGRIA_CONCRETE)
                 .add(ModBlocks.SKY_CONCRETE)
-                .add(ModBlocks.WASABI_CONCRETE);
+                .add(ModBlocks.WASABI_CONCRETE)
+
+                .add(ModBlocks.BLURPLE_CONCRETE_POWDER);
     }
 }

@@ -114,6 +114,12 @@ public class ModBlocks {
                     .requiresTool()
                     .strength(1.8F)));
 
+    public static final Block BLURPLE_CONCRETE_POWDER = registerBlock("blurple_concrete_powder",
+            new ConcretePowderBlock(BLURPLE_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
 
 
     private static Block registerBlock(String name, Block block){
@@ -147,6 +153,8 @@ public class ModBlocks {
             entries.add(ModBlocks.SANGRIA_CONCRETE);
             entries.add(ModBlocks.SKY_CONCRETE);
             entries.add(ModBlocks.WASABI_CONCRETE);
+
+            entries.add(ModBlocks.BLURPLE_CONCRETE_POWDER);
         });
     }
 }
