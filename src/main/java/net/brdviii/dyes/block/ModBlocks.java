@@ -120,6 +120,183 @@ public class ModBlocks {
                     strength(0.5F).
                     sounds(BlockSoundGroup.SAND)));
 
+    public static final Block CANARY_CONCRETE_POWDER = registerBlock("canary_concrete_powder",
+            new ConcretePowderBlock(CANARY_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block CORAL_CONCRETE_POWDER = registerBlock("coral_concrete_powder",
+            new ConcretePowderBlock(CORAL_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block ROSE_CONCRETE_POWDER = registerBlock("rose_concrete_powder",
+            new ConcretePowderBlock(ROSE_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block SACRAMENTO_CONCRETE_POWDER = registerBlock("sacramento_concrete_powder",
+            new ConcretePowderBlock(SACRAMENTO_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block SANGRIA_CONCRETE_POWDER = registerBlock("sangria_concrete_powder",
+            new ConcretePowderBlock(SANGRIA_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block SKY_CONCRETE_POWDER = registerBlock("sky_concrete_powder",
+            new ConcretePowderBlock(SKY_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block WASABI_CONCRETE_POWDER = registerBlock("wasabi_concrete_powder",
+            new ConcretePowderBlock(WASABI_CONCRETE, AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.SNARE).
+                    strength(0.5F).
+                    sounds(BlockSoundGroup.SAND)));
+
+    public static final Block BLURPLE_TERRACOTTA = registerBlock("blurple_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block CANARY_TERRACOTTA = registerBlock("canary_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block CORAL_TERRACOTTA = registerBlock("coral_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block ROSE_TERRACOTTA = registerBlock("rose_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block SACRAMENTO_TERRACOTTA = registerBlock("sacramento_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block SANGRIA_TERRACOTTA = registerBlock("sangria_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block SKY_TERRACOTTA = registerBlock("sky_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block WASABI_TERRACOTTA = registerBlock("wasabi_terracotta",
+            new Block(AbstractBlock.Settings.create().
+                    instrument(NoteBlockInstrument.BASEDRUM).
+                    requiresTool()
+                    .strength(1.25F, 4.2F)));
+
+    public static final Block BLURPLE_STAINED_GLASS = registerBlock("blurple_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block CANARY_STAINED_GLASS = registerBlock("canary_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block CORAL_STAINED_GLASS = registerBlock("coral_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block ROSE_STAINED_GLASS = registerBlock("rose_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block SACRAMENTO_STAINED_GLASS = registerBlock("sacramento_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block SANGRIA_STAINED_GLASS = registerBlock("sangria_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block SKY_STAINED_GLASS = registerBlock("sky_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
+
+    public static final Block WASABI_STAINED_GLASS = registerBlock("wasabi_stained_glass",
+            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -155,6 +332,31 @@ public class ModBlocks {
             entries.add(ModBlocks.WASABI_CONCRETE);
 
             entries.add(ModBlocks.BLURPLE_CONCRETE_POWDER);
+            entries.add(ModBlocks.CANARY_CONCRETE_POWDER);
+            entries.add(ModBlocks.CORAL_CONCRETE_POWDER);
+            entries.add(ModBlocks.ROSE_CONCRETE_POWDER);
+            entries.add(ModBlocks.SACRAMENTO_CONCRETE_POWDER);
+            entries.add(ModBlocks.SANGRIA_CONCRETE_POWDER);
+            entries.add(ModBlocks.SKY_CONCRETE_POWDER);
+            entries.add(ModBlocks.WASABI_CONCRETE_POWDER);
+
+            entries.add(ModBlocks.BLURPLE_TERRACOTTA);
+            entries.add(ModBlocks.CANARY_TERRACOTTA);
+            entries.add(ModBlocks.CORAL_TERRACOTTA);
+            entries.add(ModBlocks.ROSE_TERRACOTTA);
+            entries.add(ModBlocks.SACRAMENTO_TERRACOTTA);
+            entries.add(ModBlocks.SANGRIA_TERRACOTTA);
+            entries.add(ModBlocks.SKY_TERRACOTTA);
+            entries.add(ModBlocks.WASABI_TERRACOTTA);
+
+            entries.add(ModBlocks.BLURPLE_STAINED_GLASS);
+            entries.add(ModBlocks.CANARY_STAINED_GLASS);
+            entries.add(ModBlocks.CORAL_STAINED_GLASS);
+            entries.add(ModBlocks.ROSE_STAINED_GLASS);
+            entries.add(ModBlocks.SACRAMENTO_STAINED_GLASS);
+            entries.add(ModBlocks.SANGRIA_STAINED_GLASS);
+            entries.add(ModBlocks.SKY_STAINED_GLASS);
+            entries.add(ModBlocks.WASABI_STAINED_GLASS);
         });
     }
 }

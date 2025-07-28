@@ -35,6 +35,31 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WASABI_CONCRETE);
 
         blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.BLURPLE_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.CANARY_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.CORAL_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.ROSE_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.SACRAMENTO_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.SANGRIA_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.SKY_CONCRETE_POWDER);
+        blockStateModelGenerator.registerRandomHorizontalRotations(TexturedModel.CUBE_ALL,ModBlocks.WASABI_CONCRETE_POWDER);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLURPLE_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CANARY_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORAL_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROSE_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SACRAMENTO_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SANGRIA_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKY_TERRACOTTA);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WASABI_TERRACOTTA);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLURPLE_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CANARY_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORAL_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROSE_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SACRAMENTO_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SANGRIA_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKY_STAINED_GLASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WASABI_STAINED_GLASS);
     }
 
     @Override

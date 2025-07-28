@@ -16,6 +16,13 @@
     "dyes:sangria_concrete",
     "dyes:sky_concrete",
     "dyes:wasabi_concrete",
-    "dyes:blurple_concrete_powder"
+    "dyes:blurple_terracotta",
+    "dyes:canary_terracotta",
+    "dyes:coral_terracotta",
+    "dyes:rose_terracotta",
+    "dyes:sacramento_terracotta",
+    "dyes:sangria_terracotta",
+    "dyes:sky_terracotta",
+    "dyes:wasabi_terracotta"
   ]
 }

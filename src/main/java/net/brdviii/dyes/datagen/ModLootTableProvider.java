@@ -33,5 +33,30 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WASABI_CONCRETE);
 
         addDrop(ModBlocks.BLURPLE_CONCRETE_POWDER);
+        addDrop(ModBlocks.CANARY_CONCRETE_POWDER);
+        addDrop(ModBlocks.CORAL_CONCRETE_POWDER);
+        addDrop(ModBlocks.ROSE_CONCRETE_POWDER);
+        addDrop(ModBlocks.SACRAMENTO_CONCRETE_POWDER);
+        addDrop(ModBlocks.SANGRIA_CONCRETE_POWDER);
+        addDrop(ModBlocks.SKY_CONCRETE_POWDER);
+        addDrop(ModBlocks.WASABI_CONCRETE_POWDER);
+
+        addDrop(ModBlocks.BLURPLE_TERRACOTTA);
+        addDrop(ModBlocks.CANARY_TERRACOTTA);
+        addDrop(ModBlocks.CORAL_TERRACOTTA);
+        addDrop(ModBlocks.ROSE_TERRACOTTA);
+        addDrop(ModBlocks.SACRAMENTO_TERRACOTTA);
+        addDrop(ModBlocks.SANGRIA_TERRACOTTA);
+        addDrop(ModBlocks.SKY_TERRACOTTA);
+        addDrop(ModBlocks.WASABI_TERRACOTTA);
+
+        addDropWithSilkTouch(ModBlocks.BLURPLE_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.CANARY_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.CORAL_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.ROSE_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.SACRAMENTO_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.SANGRIA_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.SKY_STAINED_GLASS);
+        addDropWithSilkTouch(ModBlocks.WASABI_STAINED_GLASS);
     }
 }

@@ -3,6 +3,7 @@ package net.brdviii.dyes.datagen;
 import net.brdviii.dyes.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -34,6 +35,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SKY_CONCRETE)
                 .add(ModBlocks.WASABI_CONCRETE)
 
-                .add(ModBlocks.BLURPLE_CONCRETE_POWDER);
+                .add(ModBlocks.BLURPLE_TERRACOTTA)
+                .add(ModBlocks.CANARY_TERRACOTTA)
+                .add(ModBlocks.CORAL_TERRACOTTA)
+                .add(ModBlocks.ROSE_TERRACOTTA)
+                .add(ModBlocks.SACRAMENTO_TERRACOTTA)
+                .add(ModBlocks.SANGRIA_TERRACOTTA)
+                .add(ModBlocks.SKY_TERRACOTTA)
+                .add(ModBlocks.WASABI_TERRACOTTA);
     }
 }

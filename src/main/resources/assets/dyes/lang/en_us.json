@@ -26,5 +26,30 @@
   "block.dyes.sky_concrete": "Sky Concrete",
   "block.dyes.wasabi_concrete": "Wasabi Concrete",
 
-  "block.dyes.blurple_concrete_powder": "Blurple Concrete Powder"
+  "block.dyes.blurple_concrete_powder": "Blurple Concrete Powder",
+  "block.dyes.canary_concrete_powder": "Canary Concrete Powder",
+  "block.dyes.coral_concrete_powder": "Coral Concrete Powder",
+  "block.dyes.rose_concrete_powder": "Rose Concrete Powder",
+  "block.dyes.sacramento_concrete_powder": "Sacramento Concrete Powder",
+  "block.dyes.sangria_concrete_powder": "Sangria Concrete Powder",
+  "block.dyes.sky_concrete_powder": "Sky Concrete Powder",
+  "block.dyes.wasabi_concrete_powder": "Wasabi Concrete Powder",
+
+  "block.dyes.blurple_terracotta": "Blurple Terracotta",
+  "block.dyes.canary_terracotta": "Canary Terracotta",
+  "block.dyes.coral_terracotta": "Coral Terracotta",
+  "block.dyes.rose_terracotta": "Rose Terracotta",
+  "block.dyes.sacramento_terracotta": "Sacramento Terracotta",
+  "block.dyes.sangria_terracotta": "Sangria Terracotta",
+  "block.dyes.sky_terracotta": "Sky Terracotta",
+  "block.dyes.wasabi_terracotta": "Wasabi Terracotta",
+
+  "block.dyes.blurple_stained_glass": "Blurple Stained Glass",
+  "block.dyes.canary_stained_glass": "Canary Stained Glass",
+  "block.dyes.coral_stained_glass": "Coral Stained Glass",
+  "block.dyes.rose_stained_glass": "Rose Stained Glass",
+  "block.dyes.sacramento_stained_glass": "Sacramento Stained Glass",
+  "block.dyes.sangria_stained_glass": "Sangria Stained Glass",
+  "block.dyes.sky_stained_glass": "Sky Stained Glass",
+  "block.dyes.wasabi_stained_glass": "Wasabi Stained Glass"
 }
