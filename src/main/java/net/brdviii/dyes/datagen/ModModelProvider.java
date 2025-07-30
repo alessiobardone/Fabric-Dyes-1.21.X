@@ -6,6 +6,7 @@ import net.brdviii.dyes.block.custom.BlueberryBushBlock;
 import net.brdviii.dyes.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.TallFlowerBlock;
 import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
@@ -82,6 +83,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
                 BlueberryBushBlock.AGE, 0,1,2,3);
+
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.GOOB_BLOSSOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PEACH_BELLFLOWER,ModBlocks.POTTED_PEACH_BELLFLOWER,BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ROSE,ModBlocks.POTTED_ROSE,BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

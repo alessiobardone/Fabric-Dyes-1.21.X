@@ -138,5 +138,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 )
                 )
         );
+
+        addDrop(ModBlocks.GOOB_BLOSSOM);
+        addDrop(ModBlocks.PEACH_BELLFLOWER);
+        addDrop(ModBlocks.ROSE);
     }
 }
