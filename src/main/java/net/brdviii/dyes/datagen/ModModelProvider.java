@@ -2,6 +2,7 @@ package net.brdviii.dyes.datagen;
 
 import net.brdviii.dyes.Dyes;
 import net.brdviii.dyes.block.ModBlocks;
+import net.brdviii.dyes.block.custom.BlueberryBushBlock;
 import net.brdviii.dyes.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -78,6 +79,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCandle(ModBlocks.SANGRIA_CANDLE,ModBlocks.SANGRIA_CANDLE_CAKE);
         blockStateModelGenerator.registerCandle(ModBlocks.SKY_CANDLE,ModBlocks.SKY_CANDLE_CAKE);
         blockStateModelGenerator.registerCandle(ModBlocks.WASABI_CANDLE,ModBlocks.WASABI_CANDLE_CAKE);
+
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                BlueberryBushBlock.AGE, 0,1,2,3);
     }
 
     @Override

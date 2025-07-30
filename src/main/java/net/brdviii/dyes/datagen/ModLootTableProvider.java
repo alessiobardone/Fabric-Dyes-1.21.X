@@ -1,8 +1,24 @@
 package net.brdviii.dyes.datagen;
 
 import net.brdviii.dyes.block.ModBlocks;
+import net.brdviii.dyes.block.custom.BlueberryBushBlock;
+import net.brdviii.dyes.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -14,6 +30,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+
         addDrop(ModBlocks.BLURPLE_GLAZED_TERRACOTTA);
         addDrop(ModBlocks.CANARY_GLAZED_TERRACOTTA);
         addDrop(ModBlocks.CORAL_GLAZED_TERRACOTTA);
@@ -94,5 +112,31 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SANGRIA_CANDLE);
         addDrop(ModBlocks.SKY_CANDLE);
         addDrop(ModBlocks.WASABI_CANDLE);
+
+        this.addDrop(
+                ModBlocks.BLUEBERRY_BUSH,
+                block -> this.applyExplosionDecay(
+                        block,
+                        LootTable.builder()
+                                .pool(
+                                        LootPool.builder()
+                                                .conditionally(
+                                                        BlockStatePropertyLootCondition.builder(ModBlocks.BLUEBERRY_BUSH).properties(StatePredicate.Builder.create().exactMatch(BlueberryBushBlock.AGE, 3))
+                                                )
+                                                .with(ItemEntry.builder(ModItems.BLUEBERRIES))
+                                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 3.0F)))
+                                                .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))
+                                )
+                                .pool(
+                                        LootPool.builder()
+                                                .conditionally(
+                                                        BlockStatePropertyLootCondition.builder(ModBlocks.BLUEBERRY_BUSH).properties(StatePredicate.Builder.create().exactMatch(BlueberryBushBlock.AGE, 2))
+                                                )
+                                                .with(ItemEntry.builder(ModItems.BLUEBERRIES))
+                                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
+                                                .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))
+                                )
+                )
+        );
     }
 }

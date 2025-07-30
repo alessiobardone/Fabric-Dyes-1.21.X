@@ -87,5 +87,8 @@
   "block.dyes.sacramento_candle": "Sacramento Candle",
   "block.dyes.sangria_candle": "Sangria Candle",
   "block.dyes.sky_candle": "Sky Candle",
-  "block.dyes.wasabi_candle": "Wasabi Candle"
+  "block.dyes.wasabi_candle": "Wasabi Candle",
+
+  "item.dyes.blueberries": "Blue Berries",
+  "block.dyes.blueberry_bush": "Blueberry Bush"
 }

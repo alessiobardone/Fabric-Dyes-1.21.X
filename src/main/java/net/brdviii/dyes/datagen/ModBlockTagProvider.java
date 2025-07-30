@@ -53,5 +53,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SANGRIA_CANDLE)
                 .add(ModBlocks.SKY_CANDLE)
                 .add(ModBlocks.WASABI_CANDLE);
+
     }
 }
