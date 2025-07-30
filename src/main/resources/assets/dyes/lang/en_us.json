@@ -51,5 +51,41 @@
   "block.dyes.sacramento_stained_glass": "Sacramento Stained Glass",
   "block.dyes.sangria_stained_glass": "Sangria Stained Glass",
   "block.dyes.sky_stained_glass": "Sky Stained Glass",
-  "block.dyes.wasabi_stained_glass": "Wasabi Stained Glass"
+  "block.dyes.wasabi_stained_glass": "Wasabi Stained Glass",
+
+  "block.dyes.blurple_stained_glass_pane": "Blurple Stained Glass Pane",
+  "block.dyes.canary_stained_glass_pane": "Canary Stained Glass Pane",
+  "block.dyes.coral_stained_glass_pane": "Coral Stained Glass Pane",
+  "block.dyes.rose_stained_glass_pane": "Rose Stained Glass Pane",
+  "block.dyes.sacramento_stained_glass_pane": "Sacramento Stained Glass Pane",
+  "block.dyes.sangria_stained_glass_pane": "Sangria Stained Glass Pane",
+  "block.dyes.sky_stained_glass_pane": "Sky Stained Glass Pane",
+  "block.dyes.wasabi_stained_glass_pane": "Wasabi Stained Glass Pane",
+
+  "block.dyes.blurple_wool": "Blurple Wool",
+  "block.dyes.canary_wool": "Canary Wool",
+  "block.dyes.coral_wool": "Coral Wool",
+  "block.dyes.rose_wool": "Rose Wool",
+  "block.dyes.sacramento_wool": "Sacramento Wool",
+  "block.dyes.sangria_wool": "Sangria Wool",
+  "block.dyes.sky_wool": "Sky Wool",
+  "block.dyes.wasabi_wool": "Wasabi Wool",
+
+  "block.dyes.blurple_carpet": "Blurple Carpet",
+  "block.dyes.canary_carpet": "Canary Carpet",
+  "block.dyes.coral_carpet": "Coral Carpet",
+  "block.dyes.rose_carpet": "Rose Carpet",
+  "block.dyes.sacramento_carpet": "Sacramento Carpet",
+  "block.dyes.sangria_carpet": "Sangria Carpet",
+  "block.dyes.sky_carpet": "Sky Carpet",
+  "block.dyes.wasabi_carpet": "Wasabi Carpet",
+
+  "block.dyes.blurple_candle": "Blurple Candle",
+  "block.dyes.canary_candle": "Canary Candle",
+  "block.dyes.coral_candle": "Coral Candle",
+  "block.dyes.rose_candle": "Rose Candle",
+  "block.dyes.sacramento_candle": "Sacramento Candle",
+  "block.dyes.sangria_candle": "Sangria Candle",
+  "block.dyes.sky_candle": "Sky Candle",
+  "block.dyes.wasabi_candle": "Wasabi Candle"
 }

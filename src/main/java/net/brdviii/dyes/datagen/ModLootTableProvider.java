@@ -58,5 +58,41 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.SANGRIA_STAINED_GLASS);
         addDropWithSilkTouch(ModBlocks.SKY_STAINED_GLASS);
         addDropWithSilkTouch(ModBlocks.WASABI_STAINED_GLASS);
+
+        addDropWithSilkTouch(ModBlocks.BLURPLE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.CANARY_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.CORAL_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.ROSE_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.SACRAMENTO_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.SANGRIA_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.SKY_STAINED_GLASS_PANE);
+        addDropWithSilkTouch(ModBlocks.WASABI_STAINED_GLASS_PANE);
+
+        addDrop(ModBlocks.BLURPLE_WOOL);
+        addDrop(ModBlocks.CANARY_WOOL);
+        addDrop(ModBlocks.CORAL_WOOL);
+        addDrop(ModBlocks.ROSE_WOOL);
+        addDrop(ModBlocks.SACRAMENTO_WOOL);
+        addDrop(ModBlocks.SANGRIA_WOOL);
+        addDrop(ModBlocks.SKY_WOOL);
+        addDrop(ModBlocks.WASABI_WOOL);
+
+        addDrop(ModBlocks.BLURPLE_CARPET);
+        addDrop(ModBlocks.CANARY_CARPET);
+        addDrop(ModBlocks.CORAL_CARPET);
+        addDrop(ModBlocks.ROSE_CARPET);
+        addDrop(ModBlocks.SACRAMENTO_CARPET);
+        addDrop(ModBlocks.SANGRIA_CARPET);
+        addDrop(ModBlocks.SKY_CARPET);
+        addDrop(ModBlocks.WASABI_CARPET);
+
+        addDrop(ModBlocks.BLURPLE_CANDLE);
+        addDrop(ModBlocks.CANARY_CANDLE);
+        addDrop(ModBlocks.CORAL_CANDLE);
+        addDrop(ModBlocks.ROSE_CANDLE);
+        addDrop(ModBlocks.SACRAMENTO_CANDLE);
+        addDrop(ModBlocks.SANGRIA_CANDLE);
+        addDrop(ModBlocks.SKY_CANDLE);
+        addDrop(ModBlocks.WASABI_CANDLE);
     }
 }
