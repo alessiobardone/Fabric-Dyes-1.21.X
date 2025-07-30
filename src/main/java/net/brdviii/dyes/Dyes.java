@@ -17,6 +17,5 @@ public class Dyes implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-		ModBlockEntities.registerBlockEntities();
 	}
 }

@@ -90,5 +90,9 @@
   "block.dyes.wasabi_candle": "Wasabi Candle",
 
   "item.dyes.blueberries": "Blue Berries",
-  "block.dyes.blueberry_bush": "Blueberry Bush"
+  "block.dyes.blueberry_bush": "Blueberry Bush",
+
+  "block.dyes.goob_blossom": "Goob Blossom",
+  "block.dyes.peach_bellflower": "Beach Bellflower",
+  "block.dyes.rose": "Rose"
 }
