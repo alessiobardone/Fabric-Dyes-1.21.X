@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_candle",
+  "textures": {
+    "all": "dyes:block/canary_candle",
+    "particle": "dyes:block/canary_candle"
+  }
+}

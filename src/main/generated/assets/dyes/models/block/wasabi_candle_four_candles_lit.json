@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_four_candles",
+  "textures": {
+    "all": "dyes:block/wasabi_candle_lit",
+    "particle": "dyes:block/wasabi_candle_lit"
+  }
+}

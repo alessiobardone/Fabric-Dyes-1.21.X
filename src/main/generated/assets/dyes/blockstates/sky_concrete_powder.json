@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dyes:block/sky_concrete_powder"
+      },
+      {
+        "model": "dyes:block/sky_concrete_powder",
+        "y": 90
+      },
+      {
+        "model": "dyes:block/sky_concrete_powder",
+        "y": 180
+      },
+      {
+        "model": "dyes:block/sky_concrete_powder",
+        "y": 270
+      }
+    ]
+  }
+}

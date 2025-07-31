@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "sacramento_glazed_terracotta",
+  "ingredient": {
+    "item": "dyes:sacramento_terracotta"
+  },
+  "result": {
+    "id": "dyes:sacramento_glazed_terracotta"
+  }
+}

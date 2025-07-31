@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "coral_glazed_terracotta",
+  "ingredient": {
+    "item": "dyes:coral_terracotta"
+  },
+  "result": {
+    "id": "dyes:coral_glazed_terracotta"
+  }
+}
