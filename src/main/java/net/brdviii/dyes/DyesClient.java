@@ -1,9 +1,11 @@
 package net.brdviii.dyes;
 
 import net.brdviii.dyes.block.ModBlocks;
+import net.brdviii.dyes.block.entity.ModBlockEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class DyesClient implements ClientModInitializer {
     @Override
@@ -33,5 +35,6 @@ public class DyesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_PEACH_BELLFLOWER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ROSE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_ROSE, RenderLayer.getCutout());
+
     }
 }

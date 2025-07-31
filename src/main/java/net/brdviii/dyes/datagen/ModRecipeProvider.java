@@ -202,6 +202,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.WHITE_DYE), conditionsFromItem(Items.WHITE_DYE))
                 .offerTo(exporter);
 
+        //FOOD
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.SWEETBERRIES_COOKIE,1)
+                .input(Items.COOKIE)
+                .input(Items.SWEET_BERRIES)
+                .criterion(hasItem(Items.COOKIE), conditionsFromItem(Items.COOKIE))
+                .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(Items.SWEET_BERRIES))
+                .offerTo(exporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD,ModItems.BLUEBERRIES_COOKIE,1)
+                .input(Items.COOKIE)
+                .input(ModItems.BLUEBERRIES)
+                .criterion(hasItem(Items.COOKIE), conditionsFromItem(Items.COOKIE))
+                .criterion(hasItem(ModItems.BLUEBERRIES), conditionsFromItem(ModItems.BLUEBERRIES))
+                .offerTo(exporter);
     }
 }

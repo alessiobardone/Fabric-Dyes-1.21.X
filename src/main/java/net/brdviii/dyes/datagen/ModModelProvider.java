@@ -87,6 +87,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoubleBlock(ModBlocks.GOOB_BLOSSOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PEACH_BELLFLOWER,ModBlocks.POTTED_PEACH_BELLFLOWER,BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ROSE,ModBlocks.POTTED_ROSE,BlockStateModelGenerator.TintType.NOT_TINTED);
+
     }
 
     @Override

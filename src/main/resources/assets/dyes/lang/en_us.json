@@ -94,5 +94,8 @@
 
   "block.dyes.goob_blossom": "Goob Blossom",
   "block.dyes.peach_bellflower": "Peach Bellflower",
-  "block.dyes.rose": "Rose"
+  "block.dyes.rose": "Rose",
+
+  "item.dyes.blueberries_cookie": "Blueberries Cookie",
+  "item.dyes.sweetberries_cookie": "Sweetberries Cookie"
 }
