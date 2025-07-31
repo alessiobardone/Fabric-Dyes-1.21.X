@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -70,5 +72,136 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStainedGlassDyeingRecipe(exporter, ModBlocks.SANGRIA_STAINED_GLASS, ModItems.SANGRIA_DYE);
         offerStainedGlassDyeingRecipe(exporter, ModBlocks.SKY_STAINED_GLASS, ModItems.SKY_DYE);
         offerStainedGlassDyeingRecipe(exporter, ModBlocks.WASABI_STAINED_GLASS, ModItems.WASABI_DYE);
+
+        //GLASS PANE
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.BLURPLE_STAINED_GLASS_PANE, ModBlocks.BLURPLE_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.BLURPLE_STAINED_GLASS_PANE, ModItems.BLURPLE_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.CANARY_STAINED_GLASS_PANE, ModBlocks.CANARY_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.CANARY_STAINED_GLASS_PANE, ModItems.CANARY_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.CORAL_STAINED_GLASS_PANE, ModBlocks.CORAL_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.CORAL_STAINED_GLASS_PANE, ModItems.CORAL_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.ROSE_STAINED_GLASS_PANE, ModBlocks.ROSE_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.ROSE_STAINED_GLASS_PANE, ModItems.ROSE_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.SACRAMENTO_STAINED_GLASS_PANE, ModBlocks.SACRAMENTO_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.SACRAMENTO_STAINED_GLASS_PANE, ModItems.SACRAMENTO_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.SANGRIA_STAINED_GLASS_PANE, ModBlocks.SANGRIA_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.SANGRIA_STAINED_GLASS_PANE, ModItems.SANGRIA_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.SKY_STAINED_GLASS_PANE, ModBlocks.SKY_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.SKY_STAINED_GLASS_PANE, ModItems.SKY_DYE);
+        offerStainedGlassPaneRecipe(exporter, ModBlocks.WASABI_STAINED_GLASS_PANE, ModBlocks.WASABI_STAINED_GLASS);
+        offerStainedGlassPaneDyeingRecipe(exporter, ModBlocks.WASABI_STAINED_GLASS_PANE, ModItems.WASABI_DYE);
+
+        //WOOL
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.BLURPLE_WOOL,1)
+                .input(ModItems.BLURPLE_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.BLURPLE_DYE), conditionsFromItem(ModItems.BLURPLE_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.CANARY_WOOL,1)
+                .input(ModItems.CANARY_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.CANARY_DYE), conditionsFromItem(ModItems.CANARY_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.CORAL_WOOL,1)
+                .input(ModItems.CORAL_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.CORAL_DYE), conditionsFromItem(ModItems.CORAL_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.ROSE_WOOL,1)
+                .input(ModItems.ROSE_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.ROSE_DYE), conditionsFromItem(ModItems.ROSE_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.SACRAMENTO_WOOL,1)
+                .input(ModItems.SACRAMENTO_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.SACRAMENTO_DYE), conditionsFromItem(ModItems.SACRAMENTO_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.SANGRIA_WOOL,1)
+                .input(ModItems.SANGRIA_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.SANGRIA_DYE), conditionsFromItem(ModItems.SANGRIA_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.SKY_WOOL,1)
+                .input(ModItems.SKY_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.SKY_DYE), conditionsFromItem(ModItems.SKY_DYE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS,ModBlocks.WASABI_WOOL,1)
+                .input(ModItems.WASABI_DYE)
+                .input(Blocks.WHITE_WOOL)
+                .criterion(hasItem(ModItems.WASABI_DYE), conditionsFromItem(ModItems.WASABI_DYE))
+                .offerTo(exporter);
+
+        //WOOL CARPET
+        offerCarpetRecipe(exporter, ModBlocks.BLURPLE_CARPET, ModBlocks.BLURPLE_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.CANARY_CARPET, ModBlocks.CANARY_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.CORAL_CARPET, ModBlocks.CORAL_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.ROSE_CARPET, ModBlocks.ROSE_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.SACRAMENTO_CARPET, ModBlocks.SACRAMENTO_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.SANGRIA_CARPET, ModBlocks.SANGRIA_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.SKY_CARPET, ModBlocks.SKY_WOOL);
+        offerCarpetRecipe(exporter, ModBlocks.WASABI_CARPET, ModBlocks.WASABI_WOOL);
+
+        //CANDLE
+        offerCandleDyeingRecipe(exporter, ModBlocks.BLURPLE_CANDLE, ModItems.BLURPLE_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.CANARY_CANDLE, ModItems.CANARY_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.CORAL_CANDLE, ModItems.CORAL_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.ROSE_CANDLE, ModItems.ROSE_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.SACRAMENTO_CANDLE, ModItems.SACRAMENTO_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.SANGRIA_CANDLE, ModItems.SANGRIA_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.SKY_CANDLE, ModItems.SKY_DYE);
+        offerCandleDyeingRecipe(exporter, ModBlocks.WASABI_CANDLE, ModItems.WASABI_DYE);
+
+        //DYE
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.BLURPLE_DYE,1)
+                .input(ModItems.BLUEBERRIES)
+                .criterion(hasItem(ModItems.BLUEBERRIES), conditionsFromItem(ModItems.BLUEBERRIES))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CANARY_DYE,2)
+                .input(ModBlocks.GOOB_BLOSSOM)
+                .criterion(hasItem(ModBlocks.GOOB_BLOSSOM), conditionsFromItem(ModBlocks.GOOB_BLOSSOM))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CORAL_DYE,1)
+                .input(ModBlocks.PEACH_BELLFLOWER)
+                .criterion(hasItem(ModBlocks.PEACH_BELLFLOWER), conditionsFromItem(ModBlocks.PEACH_BELLFLOWER))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ROSE_DYE,1)
+                .input(ModBlocks.ROSE)
+                .criterion(hasItem(ModBlocks.ROSE), conditionsFromItem(ModBlocks.ROSE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.SACRAMENTO_DYE,2)
+                .input(Items.CYAN_DYE)
+                .input(Items.GREEN_DYE)
+                .criterion(hasItem(Items.CYAN_DYE), conditionsFromItem(Items.CYAN_DYE))
+                .criterion(hasItem(Items.GREEN_DYE), conditionsFromItem(Items.GREEN_DYE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.SANGRIA_DYE,2)
+                .input(Items.RED_DYE)
+                .input(Items.PURPLE_DYE)
+                .criterion(hasItem(Items.RED_DYE), conditionsFromItem(Items.RED_DYE))
+                .criterion(hasItem(Items.PURPLE_DYE), conditionsFromItem(Items.PURPLE_DYE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.SKY_DYE,2)
+                .input(Items.LIGHT_BLUE_DYE)
+                .input(Items.WHITE_DYE)
+                .criterion(hasItem(Items.LIGHT_BLUE_DYE), conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                .criterion(hasItem(Items.WHITE_DYE), conditionsFromItem(Items.WHITE_DYE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.WASABI_DYE,2)
+                .input(Items.LIME_DYE)
+                .input(Items.WHITE_DYE)
+                .criterion(hasItem(Items.LIME_DYE), conditionsFromItem(Items.LIME_DYE))
+                .criterion(hasItem(Items.WHITE_DYE), conditionsFromItem(Items.WHITE_DYE))
+                .offerTo(exporter);
+
+
     }
 }
