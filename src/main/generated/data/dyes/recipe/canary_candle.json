@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_candle",
+  "ingredients": [
+    {
+      "item": "minecraft:candle"
+    },
+    {
+      "item": "dyes:canary_dye"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dyes:canary_candle"
+  }
+}

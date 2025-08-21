@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blurple_terracotta": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dyes:blurple_terracotta"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:blurple_glazed_terracotta_from_smelting_blurple_terracotta"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blurple_terracotta"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:blurple_glazed_terracotta_from_smelting_blurple_terracotta"
+    ]
+  }
+}

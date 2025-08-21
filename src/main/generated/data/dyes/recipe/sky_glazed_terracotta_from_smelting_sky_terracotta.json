@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "sky_glazed_terracotta",
+  "ingredient": {
+    "item": "dyes:sky_terracotta"
+  },
+  "result": {
+    "id": "dyes:sky_glazed_terracotta"
+  }
+}

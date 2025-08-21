@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "dyes:block/coral_candle_cake"
+    },
+    "lit=true": {
+      "model": "dyes:block/coral_candle_cake_lit"
+    }
+  }
+}
