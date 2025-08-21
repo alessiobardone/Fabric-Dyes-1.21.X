@@ -32,7 +32,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Dyes.LOGGER.info("Registering Mod Item");
+        Dyes.LOGGER.info("Registering Mod Item for" + Dyes.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(BLURPLE_DYE);

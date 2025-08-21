@@ -1,8 +1,8 @@
 package net.brdviii.dyes;
 
 import net.brdviii.dyes.block.ModBlocks;
-import net.brdviii.dyes.block.entity.ModBlockEntities;
 import net.brdviii.dyes.item.ModItems;
+import net.brdviii.dyes.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,6 +17,6 @@ public class Dyes implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-		ModBlockEntities.registerBlockEntities();
+		ModWorldGen.generateModWorldGen();
 	}
 }
