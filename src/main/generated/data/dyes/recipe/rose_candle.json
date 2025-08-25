@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "dyed_candle",
   "ingredients": [
-    {
-      "item": "minecraft:candle"
-    },
-    {
-      "item": "dyes:rose_dye"
-    }
+    "minecraft:candle",
+    "dyes:rose_dye"
   ],
   "result": {
     "count": 1,

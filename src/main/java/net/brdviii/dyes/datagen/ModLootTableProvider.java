@@ -30,7 +30,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
 
         addDrop(ModBlocks.BLURPLE_GLAZED_TERRACOTTA);
         addDrop(ModBlocks.CANARY_GLAZED_TERRACOTTA);

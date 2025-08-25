@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "dyes:wasabi_dye"
-    },
-    {
-      "item": "minecraft:white_wool"
-    }
+    "dyes:wasabi_dye",
+    "minecraft:white_wool"
   ],
   "result": {
     "count": 1,

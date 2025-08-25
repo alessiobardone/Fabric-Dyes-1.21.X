@@ -4,11 +4,15 @@ import net.brdviii.dyes.Dyes;
 import net.brdviii.dyes.block.ModBlocks;
 import net.brdviii.dyes.block.custom.BlueberryBushBlock;
 import net.brdviii.dyes.item.ModItems;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+
 import net.minecraft.block.Blocks;
 import net.minecraft.block.TallFlowerBlock;
-import net.minecraft.data.client.*;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TexturedModel;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -54,14 +58,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKY_TERRACOTTA);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WASABI_TERRACOTTA);
 
-        blockStateModelGenerator.registerGlassPane(ModBlocks.BLURPLE_STAINED_GLASS, ModBlocks.BLURPLE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.CANARY_STAINED_GLASS, ModBlocks.CANARY_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.CORAL_STAINED_GLASS, ModBlocks.CORAL_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.ROSE_STAINED_GLASS, ModBlocks.ROSE_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.SACRAMENTO_STAINED_GLASS, ModBlocks.SACRAMENTO_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.SANGRIA_STAINED_GLASS, ModBlocks.SANGRIA_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.SKY_STAINED_GLASS, ModBlocks.SKY_STAINED_GLASS_PANE);
-        blockStateModelGenerator.registerGlassPane(ModBlocks.WASABI_STAINED_GLASS, ModBlocks.WASABI_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.BLURPLE_STAINED_GLASS, ModBlocks.BLURPLE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.CANARY_STAINED_GLASS, ModBlocks.CANARY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.CORAL_STAINED_GLASS, ModBlocks.CORAL_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.ROSE_STAINED_GLASS, ModBlocks.ROSE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.SACRAMENTO_STAINED_GLASS, ModBlocks.SACRAMENTO_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.SANGRIA_STAINED_GLASS, ModBlocks.SANGRIA_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.SKY_STAINED_GLASS, ModBlocks.SKY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.WASABI_STAINED_GLASS, ModBlocks.WASABI_STAINED_GLASS_PANE);
 
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.BLURPLE_WOOL, ModBlocks.BLURPLE_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.CANARY_WOOL, ModBlocks.CANARY_CARPET);
@@ -81,13 +85,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCandle(ModBlocks.SKY_CANDLE,ModBlocks.SKY_CANDLE_CAKE);
         blockStateModelGenerator.registerCandle(ModBlocks.WASABI_CANDLE,ModBlocks.WASABI_CANDLE_CAKE);
 
-        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.CrossType.NOT_TINTED,
                 BlueberryBushBlock.AGE, 0,1,2,3);
 
-        blockStateModelGenerator.registerDoubleBlock(ModBlocks.GOOB_BLOSSOM, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PEACH_BELLFLOWER,ModBlocks.POTTED_PEACH_BELLFLOWER,BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ROSE,ModBlocks.POTTED_ROSE,BlockStateModelGenerator.TintType.NOT_TINTED);
-
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.GOOB_BLOSSOM, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PEACH_BELLFLOWER,ModBlocks.POTTED_PEACH_BELLFLOWER,BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ROSE,ModBlocks.POTTED_ROSE,BlockStateModelGenerator.CrossType.NOT_TINTED);
     }
 
     @Override

@@ -16,7 +16,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLURPLE_GLAZED_TERRACOTTA)
                 .add(ModBlocks.CANARY_GLAZED_TERRACOTTA)
                 .add(ModBlocks.CORAL_GLAZED_TERRACOTTA)
@@ -44,7 +44,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SKY_TERRACOTTA)
                 .add(ModBlocks.WASABI_TERRACOTTA);
 
-        getOrCreateTagBuilder(BlockTags.CANDLES)
+        valueLookupBuilder(BlockTags.CANDLES)
                 .add(ModBlocks.BLURPLE_CANDLE)
                 .add(ModBlocks.CANARY_CANDLE)
                 .add(ModBlocks.CORAL_CANDLE)
@@ -54,10 +54,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SKY_CANDLE)
                 .add(ModBlocks.WASABI_CANDLE);
 
-        getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
+        valueLookupBuilder(BlockTags.FLOWERS)
                 .add(ModBlocks.GOOB_BLOSSOM);
 
-        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
+        valueLookupBuilder(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.PEACH_BELLFLOWER)
                 .add(ModBlocks.ROSE);
     }

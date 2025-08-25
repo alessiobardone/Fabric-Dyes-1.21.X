@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:cookie"
-    },
-    {
-      "item": "dyes:blueberries"
-    }
+    "minecraft:cookie",
+    "dyes:blueberries"
   ],
   "result": {
     "count": 1,

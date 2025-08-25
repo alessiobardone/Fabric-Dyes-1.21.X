@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "rose_glazed_terracotta",
-  "ingredient": {
-    "item": "dyes:rose_terracotta"
-  },
+  "ingredient": "dyes:rose_terracotta",
   "result": {
     "id": "dyes:rose_glazed_terracotta"
   }

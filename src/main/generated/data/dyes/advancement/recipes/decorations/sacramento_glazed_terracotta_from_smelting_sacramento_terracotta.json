@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sacramento_glazed_terracotta_from_smelting_sacramento_terracotta"
+        "recipe": "dyes:sacramento_glazed_terracotta_from_smelting_sacramento_terracotta"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sacramento_glazed_terracotta_from_smelting_sacramento_terracotta"
+      "dyes:sacramento_glazed_terracotta_from_smelting_sacramento_terracotta"
     ]
   }
 }

@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "stained_glass_pane",
   "key": {
-    "#": {
-      "item": "dyes:sky_stained_glass"
-    }
+    "#": "dyes:sky_stained_glass"
   },
   "pattern": [
     "###",

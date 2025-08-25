@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "sangria_glazed_terracotta",
-  "ingredient": {
-    "item": "dyes:sangria_terracotta"
-  },
+  "ingredient": "dyes:sangria_terracotta",
   "result": {
     "id": "dyes:sangria_glazed_terracotta"
   }

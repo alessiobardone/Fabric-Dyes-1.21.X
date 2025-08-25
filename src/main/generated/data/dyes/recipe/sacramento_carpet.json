@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "carpet",
   "key": {
-    "#": {
-      "item": "dyes:sacramento_wool"
-    }
+    "#": "dyes:sacramento_wool"
   },
   "pattern": [
     "##"

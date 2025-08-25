@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "stained_glass_pane",
   "key": {
-    "#": {
-      "item": "dyes:canary_stained_glass"
-    }
+    "#": "dyes:canary_stained_glass"
   },
   "pattern": [
     "###",

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:rose_glazed_terracotta_from_smelting_rose_terracotta"
+        "recipe": "dyes:rose_glazed_terracotta_from_smelting_rose_terracotta"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:rose_glazed_terracotta_from_smelting_rose_terracotta"
+      "dyes:rose_glazed_terracotta_from_smelting_rose_terracotta"
     ]
   }
 }

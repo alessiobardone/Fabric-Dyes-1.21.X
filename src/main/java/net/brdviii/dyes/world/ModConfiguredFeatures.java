@@ -10,7 +10,7 @@ import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.collection.DataPool;
+import net.minecraft.util.collection.Pool;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
@@ -44,23 +44,23 @@ public class ModConfiguredFeatures {
                 createMixedPatch(flowers,32));
     }
 
+
     public static RandomPatchFeatureConfig createMixedPatch(Map<Block, Integer> blocksWithWeights, int tries) {
         Dyes.LOGGER.info("[Configured] Created Mixed Patch of Tries " + tries);
 
-        DataPool.Builder<BlockState> poolBuilder = DataPool.builder();
+        Pool.Builder<BlockState> builder = Pool.builder();
         for (Map.Entry<Block, Integer> entry : blocksWithWeights.entrySet()) {
-            poolBuilder.add(entry.getKey().getDefaultState(), entry.getValue());
+            builder.add(entry.getKey().getDefaultState(), entry.getValue());
         }
 
-        WeightedBlockStateProvider provider = new WeightedBlockStateProvider(poolBuilder.build());
+        WeightedBlockStateProvider provider = new WeightedBlockStateProvider(builder);
         SimpleBlockFeatureConfig config = new SimpleBlockFeatureConfig(provider);
 
-        return net.minecraft.world.gen.feature.ConfiguredFeatures.createRandomPatchFeatureConfig(
+        return ConfiguredFeatures.createRandomPatchFeatureConfig(
                 tries,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, config)
         );
     }
-
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Dyes.MOD_ID, name));
     }

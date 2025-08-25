@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "dyes:goob_blossom"
-    }
+    "dyes:goob_blossom"
   ],
   "result": {
     "count": 2,

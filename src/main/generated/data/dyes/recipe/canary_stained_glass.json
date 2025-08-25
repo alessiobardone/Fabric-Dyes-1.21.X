@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_glass",
   "key": {
-    "#": {
-      "item": "minecraft:glass"
-    },
-    "X": {
-      "item": "dyes:canary_dye"
-    }
+    "#": "minecraft:glass",
+    "X": "dyes:canary_dye"
   },
   "pattern": [
     "###",

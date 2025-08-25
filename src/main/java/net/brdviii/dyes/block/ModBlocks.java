@@ -12,211 +12,231 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+
+import java.util.function.Function;
 
 public class ModBlocks {
 
     //GLAZED TERRACOTTA
     public static final Block BLURPLE_GLAZED_TERRACOTTA = registerBlock("blurple_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block CANARY_GLAZED_TERRACOTTA = registerBlock("canary_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block CORAL_GLAZED_TERRACOTTA = registerBlock("coral_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block ROSE_GLAZED_TERRACOTTA = registerBlock("rose_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block SACRAMENTO_GLAZED_TERRACOTTA = registerBlock("sacramento_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block SANGRIA_GLAZED_TERRACOTTA = registerBlock("sangria_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block SKY_GLAZED_TERRACOTTA = registerBlock("sky_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     public static final Block WASABI_GLAZED_TERRACOTTA = registerBlock("wasabi_glazed_terracotta",
-            new GlazedTerracottaBlock(AbstractBlock.Settings.create()
-                    .strength(1.4f)
+            properties ->  new GlazedTerracottaBlock(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+                    .strength(1.4F)
+                    .pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
     //CONCRETE
     public static final Block BLURPLE_CONCRETE = registerBlock("blurple_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block CANARY_CONCRETE = registerBlock("canary_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block CORAL_CONCRETE = registerBlock("coral_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block ROSE_CONCRETE = registerBlock("rose_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block SACRAMENTO_CONCRETE = registerBlock("sacramento_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block SANGRIA_CONCRETE = registerBlock("sangria_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block SKY_CONCRETE = registerBlock("sky_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     public static final Block WASABI_CONCRETE = registerBlock("wasabi_concrete",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(1.8F)));
 
     //CONCRETE POWDER
     public static final Block BLURPLE_CONCRETE_POWDER = registerBlock("blurple_concrete_powder",
-            new ConcretePowderBlock(BLURPLE_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(BLURPLE_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block CANARY_CONCRETE_POWDER = registerBlock("canary_concrete_powder",
-            new ConcretePowderBlock(CANARY_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(CANARY_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block CORAL_CONCRETE_POWDER = registerBlock("coral_concrete_powder",
-            new ConcretePowderBlock(CORAL_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(CORAL_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block ROSE_CONCRETE_POWDER = registerBlock("rose_concrete_powder",
-            new ConcretePowderBlock(ROSE_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(ROSE_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block SACRAMENTO_CONCRETE_POWDER = registerBlock("sacramento_concrete_powder",
-            new ConcretePowderBlock(SACRAMENTO_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(SACRAMENTO_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block SANGRIA_CONCRETE_POWDER = registerBlock("sangria_concrete_powder",
-            new ConcretePowderBlock(SANGRIA_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(SANGRIA_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block SKY_CONCRETE_POWDER = registerBlock("sky_concrete_powder",
-            new ConcretePowderBlock(SKY_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(SKY_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     public static final Block WASABI_CONCRETE_POWDER = registerBlock("wasabi_concrete_powder",
-            new ConcretePowderBlock(WASABI_CONCRETE, AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.SNARE).
-                    strength(0.5F).
-                    sounds(BlockSoundGroup.SAND)));
+            properties -> new ConcretePowderBlock(WASABI_CONCRETE, properties
+                    .instrument(NoteBlockInstrument.SNARE)
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.SAND)));
 
     //TERRACOTTA
     public static final Block BLURPLE_TERRACOTTA = registerBlock("blurple_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block CANARY_TERRACOTTA = registerBlock("canary_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block CORAL_TERRACOTTA = registerBlock("coral_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block ROSE_TERRACOTTA = registerBlock("rose_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block SACRAMENTO_TERRACOTTA = registerBlock("sacramento_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block SANGRIA_TERRACOTTA = registerBlock("sangria_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block SKY_TERRACOTTA = registerBlock("sky_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     public static final Block WASABI_TERRACOTTA = registerBlock("wasabi_terracotta",
-            new Block(AbstractBlock.Settings.create().
-                    instrument(NoteBlockInstrument.BASEDRUM).
-                    requiresTool()
-                    .strength(1.25F, 4.2F)));
+            properties -> new Block(properties
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()
+                    .strength(1.5F, 6.0F)));
 
     //GLASS
     public static final Block BLURPLE_STAINED_GLASS = registerBlock("blurple_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -227,7 +247,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block CANARY_STAINED_GLASS = registerBlock("canary_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -238,7 +258,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block CORAL_STAINED_GLASS = registerBlock("coral_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -249,7 +269,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block ROSE_STAINED_GLASS = registerBlock("rose_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -260,7 +280,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block SACRAMENTO_STAINED_GLASS = registerBlock("sacramento_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -271,7 +291,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block SANGRIA_STAINED_GLASS = registerBlock("sangria_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -282,7 +302,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block SKY_STAINED_GLASS = registerBlock("sky_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -293,7 +313,7 @@ public class ModBlocks {
                     .blockVision(Blocks::never)));
 
     public static final Block WASABI_STAINED_GLASS = registerBlock("wasabi_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE,AbstractBlock.Settings.create()
+            properties -> new StainedGlassBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -305,56 +325,56 @@ public class ModBlocks {
 
     //GLASS PANE
     public static final Block BLURPLE_STAINED_GLASS_PANE = registerBlock("blurple_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block CANARY_STAINED_GLASS_PANE = registerBlock("canary_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block CORAL_STAINED_GLASS_PANE = registerBlock("coral_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block ROSE_STAINED_GLASS_PANE = registerBlock("rose_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block SACRAMENTO_STAINED_GLASS_PANE = registerBlock("sacramento_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block SANGRIA_STAINED_GLASS_PANE = registerBlock("sangria_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block SKY_STAINED_GLASS_PANE = registerBlock("sky_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
                     .nonOpaque()));
 
     public static final Block WASABI_STAINED_GLASS_PANE = registerBlock("wasabi_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new StainedGlassPaneBlock(DyeColor.WHITE, properties
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.GLASS)
@@ -362,42 +382,42 @@ public class ModBlocks {
 
     //WOOL
     public static final Block BLURPLE_WOOL = registerBlock("blurple_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block CANARY_WOOL = registerBlock("canary_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block CORAL_WOOL = registerBlock("coral_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block ROSE_WOOL = registerBlock("rose_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block SACRAMENTO_WOOL = registerBlock("sacramento_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block SANGRIA_WOOL = registerBlock("sangria_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
@@ -405,14 +425,14 @@ public class ModBlocks {
 
 
     public static final Block SKY_WOOL = registerBlock("sky_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block WASABI_WOOL = registerBlock("wasabi_wool",
-            new Block(AbstractBlock.Settings.create()
+            properties -> new Block(properties
                     .instrument(NoteBlockInstrument.GUITAR)
                     .strength(0.8F)
                     .sounds(BlockSoundGroup.WOOL)
@@ -420,132 +440,242 @@ public class ModBlocks {
 
     //WOOL CARPET
     public static final Block BLURPLE_CARPET = registerBlock("blurple_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block CANARY_CARPET = registerBlock("canary_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block CORAL_CARPET = registerBlock("coral_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block ROSE_CARPET = registerBlock("rose_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block SACRAMENTO_CARPET = registerBlock("sacramento_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block SANGRIA_CARPET = registerBlock("sangria_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block SKY_CARPET = registerBlock("sky_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     public static final Block WASABI_CARPET = registerBlock("wasabi_carpet",
-            new DyedCarpetBlock(DyeColor.WHITE, AbstractBlock.Settings.create()
+            properties -> new DyedCarpetBlock(DyeColor.WHITE, properties
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.WOOL)
                     .burnable()));
 
     //CANDLE
-    public static final Block BLURPLE_CANDLE = registerBlock("blurple_candle", createCandleBlock());
-    public static final Block BLURPLE_CANDLE_CAKE = registerBlock("blurple_candle_cake", createCandleCakeBlock());
+    public static final Block BLURPLE_CANDLE = registerBlock("blurple_candle",
+            properties -> new CandleBlock(properties
+                    .nonOpaque()
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.CANDLE)
+                    .luminance(CandleBlock.STATE_TO_LUMINANCE)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block CANARY_CANDLE = registerBlock("canary_candle", createCandleBlock());
-    public static final Block CANARY_CANDLE_CAKE = registerBlock("canary_candle_cake", createCandleCakeBlock());
+    public static final Block BLURPLE_CANDLE_CAKE = registerBlock("blurple_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.BLURPLE_CANDLE, properties
+                    .solid()
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block CORAL_CANDLE = registerBlock("coral_candle", createCandleBlock());
-    public static final Block CORAL_CANDLE_CAKE = registerBlock("coral_candle_cake", createCandleCakeBlock());
+    public static final Block CANARY_CANDLE = registerBlock("canary_candle",
+            properties -> new CandleBlock(properties
+            .nonOpaque()
+            .strength(0.1F)
+            .sounds(BlockSoundGroup.CANDLE)
+            .luminance(CandleBlock.STATE_TO_LUMINANCE)
+            .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block ROSE_CANDLE = registerBlock("rose_candle", createCandleBlock());
-    public static final Block ROSE_CANDLE_CAKE = registerBlock("rose_candle_cake", createCandleCakeBlock());
+    public static final Block CANARY_CANDLE_CAKE = registerBlock("canary_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.CANARY_CANDLE, properties
+            .solid()
+            .strength(0.5F)
+            .sounds(BlockSoundGroup.WOOL)
+            .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block SACRAMENTO_CANDLE = registerBlock("sacramento_candle", createCandleBlock());
-    public static final Block SACRAMENTO_CANDLE_CAKE = registerBlock("sacramento_candle_cake", createCandleCakeBlock());
+    public static final Block CORAL_CANDLE = registerBlock("coral_candle",
+            properties -> new CandleBlock(properties
+                    .nonOpaque()
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.CANDLE)
+                    .luminance(CandleBlock.STATE_TO_LUMINANCE)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block SANGRIA_CANDLE = registerBlock("sangria_candle", createCandleBlock());
-    public static final Block SANGRIA_CANDLE_CAKE = registerBlock("sangria_candle_cake", createCandleCakeBlock());
+    public static final Block CORAL_CANDLE_CAKE = registerBlock("coral_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.CORAL_CANDLE, properties
+                    .solid()
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block SKY_CANDLE = registerBlock("sky_candle", createCandleBlock());
-    public static final Block SKY_CANDLE_CAKE = registerBlock("sky_candle_cake", createCandleCakeBlock());
+    public static final Block ROSE_CANDLE = registerBlock("rose_candle",
+            properties -> new CandleBlock(properties
+                    .nonOpaque()
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.CANDLE)
+                    .luminance(CandleBlock.STATE_TO_LUMINANCE)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block WASABI_CANDLE = registerBlock("wasabi_candle", createCandleBlock());
-    public static final Block WASABI_CANDLE_CAKE = registerBlock("wasabi_candle_cake", createCandleCakeBlock());
+    public static final Block ROSE_CANDLE_CAKE = registerBlock("rose_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.ROSE_CANDLE, properties
+                    .solid()
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SACRAMENTO_CANDLE = registerBlock("sacramento_candle",
+            properties -> new CandleBlock(properties
+            .nonOpaque()
+            .strength(0.1F)
+            .sounds(BlockSoundGroup.CANDLE)
+            .luminance(CandleBlock.STATE_TO_LUMINANCE)
+            .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SACRAMENTO_CANDLE_CAKE = registerBlock("sacramento_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.SACRAMENTO_CANDLE, properties
+            .solid()
+            .strength(0.5F)
+            .sounds(BlockSoundGroup.WOOL)
+            .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SANGRIA_CANDLE = registerBlock("sangria_candle",
+            properties -> new CandleBlock(properties
+            .nonOpaque()
+            .strength(0.1F)
+            .sounds(BlockSoundGroup.CANDLE)
+            .luminance(CandleBlock.STATE_TO_LUMINANCE)
+            .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SANGRIA_CANDLE_CAKE = registerBlock("sangria_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.SANGRIA_CANDLE, properties
+                    .solid()
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SKY_CANDLE = registerBlock("sky_candle",
+            properties -> new CandleBlock(properties
+            .nonOpaque()
+            .strength(0.1F)
+            .sounds(BlockSoundGroup.CANDLE)
+            .luminance(CandleBlock.STATE_TO_LUMINANCE)
+            .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SKY_CANDLE_CAKE = registerBlock("sky_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.SKY_CANDLE, properties
+                    .solid()
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block WASABI_CANDLE = registerBlock("wasabi_candle",
+            properties -> new CandleBlock(properties
+            .nonOpaque()
+            .strength(0.1F)
+            .sounds(BlockSoundGroup.CANDLE)
+            .luminance(CandleBlock.STATE_TO_LUMINANCE)
+            .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block WASABI_CANDLE_CAKE = registerBlock("wasabi_candle_cake",
+            properties -> new CandleCakeBlock(ModBlocks.WASABI_CANDLE, properties
+                    .solid()
+                    .strength(0.5F)
+                    .sounds(BlockSoundGroup.WOOL)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     //BLUE BERRIES
-    public static  final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
-            new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+    public static  final Block BLUEBERRY_BUSH = registerBlockWithoutItem("blueberry_bush",
+            properties -> new BlueberryBushBlock(properties
+                    .mapColor(MapColor.DARK_GREEN)
+                    .ticksRandomly()
+                    .noCollision()
+                    .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     //FLOWERS
     public static final Block GOOB_BLOSSOM = registerBlock("goob_blossom",
-            new TallFlowerBlock(AbstractBlock.Settings.copy(Blocks.LILAC)));
+            properties -> new TallFlowerBlock(properties
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .offset(AbstractBlock.OffsetType.XZ)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block PEACH_BELLFLOWER = registerBlock("peach_bellflower",
-            new FlowerBlock(StatusEffects.NIGHT_VISION,5.0F, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
-    public static final Block POTTED_PEACH_BELLFLOWER = registerBlock("potted_peach_bellflower", createFlowerPotBlock(ModBlocks.PEACH_BELLFLOWER));
+            properties -> new FlowerBlock(StatusEffects.NIGHT_VISION,5.0F, properties
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .offset(AbstractBlock.OffsetType.XZ)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block POTTED_PEACH_BELLFLOWER = registerBlock("potted_peach_bellflower",
+            properties -> new FlowerPotBlock(ModBlocks.PEACH_BELLFLOWER, properties
+                    .breakInstantly()
+                    .nonOpaque()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block ROSE = registerBlock("rose",
-            new FlowerBlock(StatusEffects.NIGHT_VISION,5.0F, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)));
-    public static final Block POTTED_ROSE = registerBlock("potted_rose", createFlowerPotBlock(ModBlocks.ROSE));
+            properties -> new FlowerBlock(StatusEffects.NIGHT_VISION,5.0F, properties
+                    .mapColor(MapColor.DARK_GREEN)
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .offset(AbstractBlock.OffsetType.XZ)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block POTTED_ROSE = registerBlock("potted_rose",
+            properties -> new FlowerPotBlock(ModBlocks.ROSE, properties
+                    .breakInstantly()
+                    .nonOpaque()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
 
 
-
-
-    public static Block createFlowerPotBlock(Block flower) {
-        return new FlowerPotBlock(flower, AbstractBlock.Settings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY));
+    private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
+        Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Dyes.MOD_ID, name))));
+        registerBlockItem(name, toRegister);
+        return Registry.register(Registries.BLOCK, Identifier.of(Dyes.MOD_ID, name), toRegister);
     }
 
-    private static Block createCandleCakeBlock(){
-        return new CandleCakeBlock(
-                ModBlocks.BLURPLE_CANDLE,
-                AbstractBlock.Settings.copy(Blocks.CANDLE_CAKE)
-        );
-    }
-    private static Block createCandleBlock() {
-        return new CandleBlock(
-                AbstractBlock.Settings.create()
-                        .nonOpaque()
-                        .strength(0.1F)
-                        .sounds(BlockSoundGroup.CANDLE)
-                        .luminance(CandleBlock.STATE_TO_LUMINANCE)
-                        .pistonBehavior(PistonBehavior.DESTROY)
-        );
-    }
-
-    private static Block registerBlockWithoutBlockItem(String name, Block block){
-        return Registry.register(Registries.BLOCK, Identifier.of(Dyes.MOD_ID, name), block);
-    }
-
-    private static Block registerBlock(String name, Block block){
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(Dyes.MOD_ID, name), block);
+    private static Block registerBlockWithoutItem(String name, Function<AbstractBlock.Settings, Block> function) {
+        return Registry.register(Registries.BLOCK, Identifier.of(Dyes.MOD_ID, name),
+                function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Dyes.MOD_ID, name)))));
     }
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(Dyes.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+                new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Dyes.MOD_ID, name)))));
     }
+
 
     public static void registerModBlocks() {
         Dyes.LOGGER.info("Registering Mod Block for " + Dyes.MOD_ID);

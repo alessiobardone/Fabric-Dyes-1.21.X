@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "blurple_glazed_terracotta",
-  "ingredient": {
-    "item": "dyes:blurple_terracotta"
-  },
+  "ingredient": "dyes:blurple_terracotta",
   "result": {
     "id": "dyes:blurple_glazed_terracotta"
   }

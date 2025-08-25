@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "dyed_candle",
   "ingredients": [
-    {
-      "item": "minecraft:candle"
-    },
-    {
-      "item": "dyes:sacramento_dye"
-    }
+    "minecraft:candle",
+    "dyes:sacramento_dye"
   ],
   "result": {
     "count": 1,

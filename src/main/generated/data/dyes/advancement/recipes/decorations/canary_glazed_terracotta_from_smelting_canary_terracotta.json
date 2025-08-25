@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:canary_glazed_terracotta_from_smelting_canary_terracotta"
+        "recipe": "dyes:canary_glazed_terracotta_from_smelting_canary_terracotta"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:canary_glazed_terracotta_from_smelting_canary_terracotta"
+      "dyes:canary_glazed_terracotta_from_smelting_canary_terracotta"
     ]
   }
 }

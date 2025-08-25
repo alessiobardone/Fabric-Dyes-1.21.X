@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "wasabi_glazed_terracotta",
-  "ingredient": {
-    "item": "dyes:wasabi_terracotta"
-  },
+  "ingredient": "dyes:wasabi_terracotta",
   "result": {
     "id": "dyes:wasabi_glazed_terracotta"
   }

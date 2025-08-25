@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sangria_glazed_terracotta_from_smelting_sangria_terracotta"
+        "recipe": "dyes:sangria_glazed_terracotta_from_smelting_sangria_terracotta"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sangria_glazed_terracotta_from_smelting_sangria_terracotta"
+      "dyes:sangria_glazed_terracotta_from_smelting_sangria_terracotta"
     ]
   }
 }

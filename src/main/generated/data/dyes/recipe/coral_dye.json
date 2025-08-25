@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "dyes:peach_bellflower"
-    }
+    "dyes:peach_bellflower"
   ],
   "result": {
     "count": 1,

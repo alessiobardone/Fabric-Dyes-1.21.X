@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "dyes:sky_dye"
-    },
-    {
-      "item": "minecraft:white_wool"
-    }
+    "dyes:sky_dye",
+    "minecraft:white_wool"
   ],
   "result": {
     "count": 1,

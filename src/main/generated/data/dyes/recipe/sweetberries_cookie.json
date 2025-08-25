@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:cookie"
-    },
-    {
-      "item": "minecraft:sweet_berries"
-    }
+    "minecraft:cookie",
+    "minecraft:sweet_berries"
   ],
   "result": {
     "count": 1,

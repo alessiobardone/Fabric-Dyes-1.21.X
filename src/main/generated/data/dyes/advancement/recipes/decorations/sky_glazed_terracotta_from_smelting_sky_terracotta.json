@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sky_glazed_terracotta_from_smelting_sky_terracotta"
+        "recipe": "dyes:sky_glazed_terracotta_from_smelting_sky_terracotta"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sky_glazed_terracotta_from_smelting_sky_terracotta"
+      "dyes:sky_glazed_terracotta_from_smelting_sky_terracotta"
     ]
   }
 }

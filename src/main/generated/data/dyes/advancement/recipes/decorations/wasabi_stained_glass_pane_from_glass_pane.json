@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wasabi_stained_glass_pane_from_glass_pane"
+        "recipe": "dyes:wasabi_stained_glass_pane_from_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wasabi_stained_glass_pane_from_glass_pane"
+      "dyes:wasabi_stained_glass_pane_from_glass_pane"
     ]
   }
 }

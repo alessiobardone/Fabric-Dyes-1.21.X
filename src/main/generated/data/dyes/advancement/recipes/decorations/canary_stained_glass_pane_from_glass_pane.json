@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:canary_stained_glass_pane_from_glass_pane"
+        "recipe": "dyes:canary_stained_glass_pane_from_glass_pane"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:canary_stained_glass_pane_from_glass_pane"
+      "dyes:canary_stained_glass_pane_from_glass_pane"
     ]
   }
 }

@@ -27,10 +27,10 @@ public class ModPlacedFeatures {
         Dyes.LOGGER.info("[Placed] BootsTrap");
 
         register(context, BLUEBERRIES_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUEBERRIES_KEY),
-                createFlowerPatchPlacement(10));
+                createFlowerPatchPlacement(15));
 
         register(context, FLOWERS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERS_KEY),
-                createFlowerPatchPlacement(10));
+                createFlowerPatchPlacement(20));
 
     }
 

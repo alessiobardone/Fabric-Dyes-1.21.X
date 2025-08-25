@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wasabi_glazed_terracotta_from_smelting_wasabi_terracotta"
+        "recipe": "dyes:wasabi_glazed_terracotta_from_smelting_wasabi_terracotta"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wasabi_glazed_terracotta_from_smelting_wasabi_terracotta"
+      "dyes:wasabi_glazed_terracotta_from_smelting_wasabi_terracotta"
     ]
   }
 }
