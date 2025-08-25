@@ -13,11 +13,12 @@ public class DyesDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
+
 		pack.addProvider(ModBlockTagProvider::new);
-		pack.addProvider(ModModelProvider::new);
+		//pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
-		pack.addProvider(ModRegistryDataGenerator::new);
+		//pack.addProvider(ModRegistryDataGenerator::new);
 	}
 
 	@Override

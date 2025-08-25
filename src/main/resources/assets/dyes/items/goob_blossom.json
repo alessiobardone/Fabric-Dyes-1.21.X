@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "dyes:block/rose"
+    "model": "dyes:item/goob_blossom"
   }
 }
